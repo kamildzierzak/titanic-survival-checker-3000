@@ -23,7 +23,7 @@ sex_d = {0:"Kobieta", 1:"Mężczyzna"}
 
 def main():
 
-	st.set_page_config(page_title="Titanic Survival Checker 9000")
+	st.set_page_config(page_title="Titanic Survival Checker 3000")
 	overview = st.container()
 	left, right = st.columns(2)
 	prediction = st.container()
@@ -31,7 +31,7 @@ def main():
 	st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/RMS_Titanic_3.jpg/1920px-RMS_Titanic_3.jpg")
 
 	with overview:
-		st.title("Titanic Survival Checker 9000")
+		st.title("Titanic Survival Checker 3000")
 
 	with left:
 		sex_radio = st.radio( "Płeć", list(sex_d.keys()), format_func=lambda x : sex_d[x] )
