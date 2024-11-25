@@ -12,7 +12,7 @@ import pathlib
 from pathlib import Path
 
 temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+# pathlib.PosixPath = pathlib.WindowsPath
 
 filename = "model.sv"
 model = pickle.load(open(filename,'rb'))
